@@ -66,37 +66,34 @@
     combos {
         compatible = "zmk,combos";
 
-        // tab backward
         tabbak {
             timeout-ms = <50>;
             key-positions = <20 21>;
             bindings = <&kp LC(PG_UP)>;
         };
 
-        // tab forward
         tabfwd {
             timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp LC(PG_DN)>;
         };
 
-        // sticky control
         skctrl {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&sk LCTL>;
         };
 
-        combo_sym_l01 {
+        pageup {
             timeout-ms = <50>;
-            key-positions = <1 11>;
-            bindings = <&kp GRAVE>;
+            key-positions = <1 2>;
+            bindings = <&kp PG_UP>;
         };
 
-        combo_sym_l02 {
+        pagedown {
             timeout-ms = <50>;
-            key-positions = <2 12>;
-            bindings = <&kp EXCL>;
+            key-positions = <21 22>;
+            bindings = <&kp PG_DN>;
         };
 
         combo_sym_l03 {
@@ -319,7 +316,7 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-                         &trans          &trans          &kp N4          &kp N5          &kpN6         &screenshot     &kp LG(LEFT)      &lcs_tab       &ctrl_tab      &kp LG(RIGHT)
+                         &trans          &trans          &kp N4          &kp N5          &kp N6         &screenshot     &kp LG(LEFT)      &lcs_tab       &ctrl_tab      &kp LG(RIGHT)
                       &kp UNDER      &kp LEFT        &kp UP          &kp RIGHT          &kp HOME         &kp LEFT         &kp DOWN          &kp UP        &kp RIGHT       &kp QMARK
                          &trans    &kp LA(LEFT)      &kp DOWN    &kp LA(RIGHT)          &kp END            &trans       &mkp LCLK       &mkp RCLK       &mkp MCLK          &trans
           

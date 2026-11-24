@@ -69,98 +69,113 @@
         tabbak {
             timeout-ms = <50>;
             key-positions = <20 21>;
+            layers = <0>;
             bindings = <&kp LC(PG_UP)>;
         };
 
         tabfwd {
             timeout-ms = <50>;
             key-positions = <22 23>;
+            layers = <0>;
             bindings = <&kp LC(PG_DN)>;
         };
 
         skctrl {
             timeout-ms = <50>;
             key-positions = <12 13>;
+            layers = <0>;
             bindings = <&sk LCTL>;
         };
 
         pageup {
             timeout-ms = <50>;
             key-positions = <1 2>;
+            layers = <0>;
             bindings = <&kp PG_UP>;
         };
 
         pagedown {
             timeout-ms = <50>;
             key-positions = <21 22>;
+            layers = <0>;
             bindings = <&kp PG_DN>;
         };
 
         esc {
             timeout-ms = <50>;
             key-positions = <23 24>;
+            layers = <0>;
             bindings = <&kp ESC>;
         };
 
         win {
             timeout-ms = <50>;
             key-positions = <0 32>;
+            layers = <0>;
             bindings = <&sk LGUI>;
         };
 
         thai {
             timeout-ms = <50>;
             key-positions = <32 14>;
+            layers = <0>;
             bindings = <&kp LA(LSHFT)>;
         };
 
-        combo_sym_l11 {
+        tab {
             timeout-ms = <50>;
-            key-positions = <11 21>;
-            bindings = <&kp PERCENT>;
+            key-positions = <13 32>;
+            layers = <0>;
+            bindings = <&kp TAB>;
         };
 
-        combo_sym_l12 {
+        stickyalt {
             timeout-ms = <50>;
-            key-positions = <12 22>;
-            bindings = <&kp STAR>;
+            key-positions = <20 21 22>;
+            layers = <0>;
+            bindings = <&sk LALT>;
         };
 
-        combo_sym_l13 {
+        rightenter {
             timeout-ms = <50>;
-            key-positions = <13 23>;
-            bindings = <&kp HASH>;
+            key-positions = <27 28>;
+            layers = <0>;
+            bindings = <&kp RET>;
         };
 
-        combo_sym_l14 {
+        F2 {
             timeout-ms = <50>;
-            key-positions = <14 24>;
-            bindings = <&kp DOLLAR>;
+            key-positions = <4 14>;
+            layers = <0>;
+            bindings = <&kp F2>;
         };
 
-        // vertical, right half, row 0
-        combo_sym_r00 {
+        leftpar {
             timeout-ms = <50>;
-            key-positions = <5 15>;
+            key-positions = <0 10>;
+            layers = <0>;
             bindings = <&kp LPAR>;
         };
 
-        combo_sym_r01 {
+        rightpar {
             timeout-ms = <50>;
-            key-positions = <6 16>;
+            key-positions = <1 11>;
+            layers = <0>;
             bindings = <&kp RPAR>;
         };
 
-        combo_sym_r02 {
+        equal {
             timeout-ms = <50>;
-            key-positions = <7 17>;
-            bindings = <&kp LBKT>;
+            key-positions = <2 12>;
+            layers = <0>;
+            bindings = <&kp EQUAL>;
         };
 
-        combo_sym_r03 {
+        underscore {
             timeout-ms = <50>;
-            key-positions = <8 18>;
-            bindings = <&kp RBKT>;
+            key-positions = <3 13>;
+            layers = <0>;
+            bindings = <&kp UNDER>;
         };
 
         combo_sym_r04 {

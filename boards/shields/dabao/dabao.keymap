@@ -331,11 +331,11 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-                         &kp DEL    &trans          &kp N4      &kp N5          &kp N6                &kp N7        &kp N8      &kp N9       &kp N0      &kp MINUS
-                         &kp RBKT   &kp LEFT        &kp UP      &kp RIGHT       &kp HOME              &kp LEFT         &kp DOWN          &kp UP        &kp RIGHT       &kp APOS
-                         &kp RET    &kp LA(LEFT)    &kp DOWN    &kp LA(RIGHT)   &kp END               &trans       &mkp LCLK       &mkp RCLK       &mkp MCLK          &trans
+                         &kp DEL    &trans          &kp N4      &kp N5          &kp N6                &kp N7       &kp N8      &kp N9       &kp N0      &kp MINUS
+                         &kp RBKT   &kp LEFT        &kp UP      &kp RIGHT       &kp HOME              &kp LEFT     &kp DOWN    &kp UP       &kp RIGHT   &kp APOS
+                         &kp RET    &kp LA(LEFT)    &kp DOWN    &kp LA(RIGHT)   &kp END               &trans       &mkp LCLK   &mkp RCLK    &mkp MCLK   &trans
           
-                                                         &trans          &trans          &trans        &kp EQUAL   &kp LBKT        &kp RBKT
+                                                    &trans      &trans          &trans                &kp EQUAL    &kp LBKT    &kp RBKT
     
             >;
         };

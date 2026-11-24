@@ -102,16 +102,16 @@
             bindings = <&kp ESC>;
         };
 
-        combo_sym_l04 {
+        win {
             timeout-ms = <50>;
-            key-positions = <4 14>;
-            bindings = <&kp EQUAL>;
+            key-positions = <0 32>;
+            bindings = <&sk LGUI>;
         };
-        // vertical, left half, row 1
-        combo_sym_l10 {
+
+        thai {
             timeout-ms = <50>;
-            key-positions = <10 20>;
-            bindings = <&kp CARET>;
+            key-positions = <32 14>;
+            bindings = <&kp LA(LSHFT)>;
         };
 
         combo_sym_l11 {
@@ -290,11 +290,11 @@
         default_layer {
             display-name = "Default";
             bindings = <
-                          &kp Q           &kp W           &kp E           &kp R       &kp T             &kp Y           &kp U           &kp I           &kp O           &kp P
-                   &hml LSHFT A     &hml LALT S    &hml LCTRL D     &hml LSHFT F      &kp G             &kp H     &hmr RSHFT J    &hmr RCTRL K     &hmr RALT L &hmr RSHFT SEMI
-                    &lt 3 Z           &kp X           &kp C           &kp V           &kp B             &kp N           &kp M       &kp COMMA         &kp DOT       &kp SLASH
+                   &kp Q           &kp W          &kp E           &kp R         &kp T             &kp Y     &kp U          &kp I           &kp O         &kp P
+                   &hml LSHFT A    &hml LALT S    &hml LCTRL D    &hml LSHFT F  &kp G             &kp H     &hmr RSHFT J   &hmr RCTRL K    &hmr RALT L   &hmr RSHFT SEMI
+                   &lt 3 Z         &kp X          &kp C           &kp V         &kp B             &kp N     &kp M          &kp COMMA       &kp DOT       &kp SLASH
            
-                                                        &mo 4   &bspc_nav 1 BSPC    &mo 2           &mo 1     &lt 2 SPACE        &kp RET
+                                                  &kp Q           &kp BSPC      &mo 2             &mo 1     &kp SPACE      &kp P
       
             >;
         };
@@ -305,22 +305,22 @@
         symbols_layer {
             display-name = "Symbols";
             bindings = <
-                       &kp EXCL          &kp AT        &kp STAR       &kp GRAVE       &kp TILDE            &kp MINUS          &kp N7          &kp N8        &kp N9          &trans
-                       &kp GRAVE       &kp TILDE       &kp HASH       &kp MINUS       &kp EQUAL            &kp PLUS          &kp N4          &kp N5        &kp N6      &kp COLON
-                      &kp UNDER        &kp DLLR       &kp PRCNT       &kp CARET        &kp AMPS            &kp N0          &kp N1          &kp N2        &kp N3          &trans
+                       &kp ESC     &kp LSFT    &kp W       &kp C       &kp R            &kp MINUS       &kp N7         &kp N8        &kp N9      &trans
+                       &kp E       &kp A       &kp S       &kp D       &kp G            &kp PLUS        &kp N4         &kp N5        &kp N6      &kp COLON
+                       &kp X       &kp N3      &kp F2      &kp F       &kp N5           &kp N0          &kp N1         &kp N2        &kp N3      &trans
           
-                                                         &trans          &trans          &trans            &trans          &kp N0         &kp DOT
+                                               &kp Z       &kp SPACE   &kp LALT          &trans         &kp N0         &kp DOT
             >;
         };
 
         nav_layer {
             display-name = "Nav";
             bindings = <
-                         &trans          &trans          &kp N4          &kp N5          &kp N6         &screenshot     &kp LG(LEFT)      &lcs_tab       &ctrl_tab      &kp LG(RIGHT)
-                      &kp UNDER      &kp LEFT        &kp UP          &kp RIGHT          &kp HOME         &kp LEFT         &kp DOWN          &kp UP        &kp RIGHT       &kp QMARK
-                         &trans    &kp LA(LEFT)      &kp DOWN    &kp LA(RIGHT)          &kp END            &trans       &mkp LCLK       &mkp RCLK       &mkp MCLK          &trans
+                         &kp DEL    &trans          &kp N4      &kp N5          &kp N6                &kp N7        &kp N8      &kp N9       &kp N0      &kp MINUS
+                         &kp RBKT   &kp LEFT        &kp UP      &kp RIGHT       &kp HOME              &kp LEFT         &kp DOWN          &kp UP        &kp RIGHT       &kp APOS
+                         &kp RET    &kp LA(LEFT)    &kp DOWN    &kp LA(RIGHT)   &kp END               &trans       &mkp LCLK       &mkp RCLK       &mkp MCLK          &trans
           
-                                                         &trans          &trans          &trans            &trans          &trans          &trans
+                                                         &trans          &trans          &trans        &kp EQUAL   &kp LBKT        &kp RBKT
     
             >;
         };

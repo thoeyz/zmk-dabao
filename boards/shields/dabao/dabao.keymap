@@ -178,28 +178,32 @@
             bindings = <&kp UNDER>;
         };
 
-        combo_sym_r04 {
+        gameon {
             timeout-ms = <50>;
-            key-positions = <9 19>;
-            bindings = <&kp BSLH>;
-        };
-        // vertical, right half, row 1
-        combo_sym_r10 {
-            timeout-ms = <50>;
-            key-positions = <15 25>;
-            bindings = <&kp AMPS>;
+            key-positions = <0 1 2 3>;
+            layers = <0>;
+            bindings = <&tog 1>;
         };
 
-        combo_sym_r11 {
+        gameoff {
             timeout-ms = <50>;
-            key-positions = <16 26>;
-            bindings = <&kp LG(C)>;
+            key-positions = <0 1 2 3>;
+            layers = <1>;
+            bindings = <&tog 1>;
         };
 
-        combo_sym_r12 {
+        sklayer3 {
             timeout-ms = <50>;
-            key-positions = <17 27>;
-            bindings = <&kp LG(X)>;
+            key-positions = <20 32>;
+            layers = <0>;
+            bindings = <&sl 3>;
+        };
+
+        sklayer5 {
+            timeout-ms = <50>;
+            key-positions = <10 32>;
+            layers = <0>;
+            bindings = <&sl 5>;
         };
 
         combo_sym_r13 {
@@ -305,9 +309,9 @@
         default_layer {
             display-name = "Default";
             bindings = <
-                   &kp Q           &kp W          &kp E           &kp R         &kp T             &kp Y     &kp U          &kp I           &kp O         &kp P
+                   &mo 3           &kp W          &kp E           &kp R         &kp T             &kp Y     &kp U          &kp I           &kp O         &kp P
                    &hml LSHFT A    &hml LALT S    &hml LCTRL D    &hml LSHFT F  &kp G             &kp H     &hmr RSHFT J   &hmr RCTRL K    &hmr RALT L   &hmr RSHFT SEMI
-                   &lt 3 Z         &kp X          &kp C           &kp V         &kp B             &kp N     &kp M          &kp COMMA       &kp DOT       &kp SLASH
+                   &lt 5 Z         &kp X          &kp C           &kp V         &kp B             &kp N     &kp M          &kp COMMA       &kp DOT       &lt 5 SLASH
            
                                                   &kp Q           &kp BSPC      &mo 2             &mo 1     &kp SPACE      &kp P
       
@@ -321,8 +325,8 @@
             display-name = "Symbols";
             bindings = <
                        &kp ESC     &kp LSFT    &kp W       &kp C       &kp R            &kp MINUS       &kp N7         &kp N8        &kp N9      &trans
-                       &kp E       &kp A       &kp S       &kp D       &kp G            &kp PLUS        &kp N4         &kp N5        &kp N6      &kp COLON
-                       &kp X       &kp N3      &kp F2      &kp F       &kp N5           &kp N0          &kp N1         &kp N2        &kp N3      &trans
+                       &kp E       &kp A       &kp S       &kp D       &kp G            &kp PLUS        &kp N4         &kp N5        &kp N6      &kp STAR
+                       &kp X       &kp N3      &kp F2      &kp F       &kp N5           &kp N0          &kp N1         &kp N2        &kp N3      &kp SLASH
           
                                                &kp Z       &kp SPACE   &kp LALT          &trans         &kp N0         &kp DOT
             >;
@@ -347,11 +351,11 @@
         misc_layer {
             display-name = "Misc";
             bindings = <
-                    &bootloader          &kp F2          &kp F3          &kp F4          &kp F5      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_CLR  &bt BT_CLR_ALL
-                         &kp F6          &kp F7          &kp F8          &kp F9         &kp F10         &kp C_MUTE   &kp C_VOL_DN    &kp C_VOL_UP        &kp C_PP           &trans
-                        &kp F11         &kp F12          &trans          &trans          &trans            &trans       &kp C_PREV    &kp C_NEXT        &kp C_STOP          &trans
+                    &bootloader         &kp N7          &kp N8          &kp N9         &kp PLUS                  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_CLR   &bt BT_CLR_ALL
+                         &kp F6         &kp N4          &kp N5          &kp N6         &kp DOT                   &kp C_MUTE      &kp C_VOL_DN    &kp C_VOL_UP      &kp C_PP     &trans
+                        &kp F11         &kp N1          &kp N2          &kp N3         &kp N0                    &trans          &kp C_PREV      &kp C_NEXT        &kp C_STOP   &trans
    
-                                                         &trans          &trans          &trans            &trans          &trans  &studio_unlock
+                                                        &kp SLASH       &kp STAR       &kp MINUS                 &trans          &trans  &studio_unlock
             >;
         };
 
@@ -469,16 +473,11 @@
         boost_layer {
             display-name = "Boost";
             bindings = <
-            // ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮  ╭───────────────┬───────────────┬───────────────┬───────────────┬───────────────╮
-                         &trans          &trans          &trans          &trans          &trans            &trans          &trans          &trans          &trans          &trans
-            // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤  ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-                         &trans          &trans          &trans          &trans          &trans            &trans          &trans          &trans          &trans          &trans
-            // ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤  ├───────────────┼───────────────┼───────────────┼───────────────┼───────────────┤
-                         &trans          &trans          &trans          &trans          &trans            &trans          &trans          &trans          &trans          &trans
-            // ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯  ╰───────────────┴───────────────┴───────────────┴───────────────┴───────────────╯
-            //                                 ╭───────────────┬───────────────┬───────────────╮  ╭───────────────┬───────────────┬───────────────╮
-                                                &trans          &trans          &trans            &trans          &trans          &trans
-            //                                 ╰───────────────┴───────────────┴───────────────╯  ╰───────────────┴───────────────┴───────────────╯
+                         &ิbootloader  &kp O    &kp I       &kp U      &kp Y                &kp T      &kp R       &kp E      &kp W      &bootloader
+                         &trans       &kp L    &kp K       &mt RSFT J &kp H                &kp G      &mt LSFT F  &kp D      &kp S      &kp A
+                         &trans       &trans   &kp P       &kp M      &kp N                &kp B      &kp V       &kp C      &kp X      &kp Z
+           
+                                               &caps_word  &kp BSPC   &kp SPACE            &kp SPACE  &kp BSPC    &kp Q
             >;
         };
 

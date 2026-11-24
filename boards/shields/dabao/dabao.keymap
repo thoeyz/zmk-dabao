@@ -473,7 +473,7 @@
         boost_layer {
             display-name = "Boost";
             bindings = <
-                         &ิbootloader  &kp O    &kp I       &kp U      &kp Y                &kp T      &kp R       &kp E      &kp W      &bootloader
+                         &bootloader  &kp O    &kp I       &kp U      &kp Y                &kp T      &kp R       &kp E      &kp W      &bootloader
                          &trans       &kp L    &kp K       &mt RSFT J &kp H                &kp G      &mt LSFT F  &kp D      &kp S      &kp A
                          &trans       &trans   &kp P       &kp M      &kp N                &kp B      &kp V       &kp C      &kp X      &kp Z
            
